@@ -2,6 +2,7 @@
   "name": "embedding-helpers",
   "module": "index.ts",
   "type": "module",
+  "license": "MIT",
   "devDependencies": {
     "@types/bun": "latest"
   },
