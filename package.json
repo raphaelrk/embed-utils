@@ -1,15 +1,36 @@
 {
   "name": "embedding-helpers",
+  "version": "1.0.0",
+  "description": "Helpers for working with vector embeddings",
   "module": "index.ts",
   "type": "module",
   "license": "MIT",
+  "keywords": [
+    "embeddings",
+    "cosine-similarity",
+    "javascript",
+    "typescript",
+    "bun",
+    "machine-learning",
+    "vectors",
+    "ai"
+  ],
   "scripts": {
-    "test": "bun test"
+    "test": "bun test",
+    "publish": "bun publish"
   },
   "devDependencies": {
     "@types/bun": "latest"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
-  }
+  },
+  "publishConfig": {
+    "access": "public",
+    "tag": "latest"
+  },
+  "exports": {
+    ".": "./index.ts"
+  },
+  "types": "index.ts"
 }
