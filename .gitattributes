@@ -1,3 +1,13 @@
 
-# https://bun.sh/guides/install/git-diff-bun-lockfile
+# bun lockfile support
+# - via https://bun.sh/guides/install/git-diff-bun-lockfile
+# - add the following to your local or global .gitattributes file:
+#   - `*.lockb binary diff=lockb`
+# - then add the following to you local git config with:
+#   - `git config diff.lockb.textconv bun`
+#   - `git config diff.lockb.binary true`
+# - or globally:
+#   - `git config --global diff.lockb.textconv bun`
+#   - `git config --global diff.lockb.binary true`
+# - effect: bun.lockb diffs will appear like yarn lockfile v1 diffs
 *.lockb binary diff=lockb
