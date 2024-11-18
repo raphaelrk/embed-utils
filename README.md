@@ -1,4 +1,4 @@
-# embedding-helpers
+# embed-utils
 
 Created to test out publishing to npm / using `bun publish`.
 
@@ -7,17 +7,17 @@ Simple utilities for working with vector embeddings in TypeScript/JavaScript.
 ## Installation
 
 ```bash
-bun install embedding-helpers
+bun install embed-utils
 # or use another package manager:
-# - `npm install embedding-helpers`
-# - `pnpm install embedding-helpers`
-# - `yarn add embedding-helpers`
+# - `npm install embed-utils`
+# - `pnpm install embed-utils`
+# - `yarn add embed-utils`
 ```
 
 ## Usage
 
 ```typescript
-import { getCosineSimilarity, getEuclideanDistance, type Embedding } from 'embedding-helpers';
+import { getCosineSimilarity, getEuclideanDistance, type Embedding } from 'embed-utils';
 
 const embedding1: Embedding = [0.5, 0.2, 0.1];
 const embedding2: Embedding = [0.4, 0.3, 0.2];

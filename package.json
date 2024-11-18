@@ -1,5 +1,5 @@
 {
-  "name": "embedding-helpers",
+  "name": "embed-utils",
   "version": "1.0.0",
   "description": "Helpers for working with vector embeddings",
   "module": "index.ts",
