@@ -1,10 +1,14 @@
 {
   "name": "embed-utils",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Helpers for working with vector embeddings",
   "module": "index.ts",
   "type": "module",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/raphaelrk/embed-utils"
+  },
   "keywords": [
     "embeddings",
     "cosine-similarity",
@@ -17,7 +21,7 @@
   ],
   "scripts": {
     "test": "bun test",
-    "publish": "bun publish"
+    "deploy": "bun publish"
   },
   "devDependencies": {
     "@types/bun": "latest"
