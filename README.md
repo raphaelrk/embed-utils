@@ -1,5 +1,7 @@
 # embedding-helpers
 
+Created to test out publishing to npm / using `bun publish`.
+
 Simple utilities for working with vector embeddings in TypeScript/JavaScript.
 
 ## Installation
