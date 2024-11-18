@@ -37,3 +37,24 @@ export function getCosineSimilarity(a: Embedding, b: Embedding): number {
 
     return dotProduct / (magnitudeA * magnitudeB);
 }
+
+/**
+ * Calculates the Euclidean distance between two embeddings
+ * @param a First embedding vector
+ * @param b Second embedding vector
+ * @returns The Euclidean distance (always non-negative)
+ * @throws Error if embeddings have different lengths
+ */
+export function getEuclideanDistance(a: Embedding, b: Embedding): number {
+    if (a.length !== b.length) {
+        throw new Error('Embeddings must have the same length');
+    }
+
+    let sumSquaredDifferences = 0;
+    for (let i = 0; i < a.length; i++) {
+        const diff = a[i] - b[i];
+        sumSquaredDifferences += diff * diff;
+    }
+
+    return Math.sqrt(sumSquaredDifferences);
+}
