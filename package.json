@@ -1,6 +1,6 @@
 {
   "name": "embed-utils",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Helpers for working with vector embeddings",
   "module": "index.ts",
   "type": "module",
@@ -20,16 +20,20 @@
     "ai"
   ],
   "scripts": {
-    "test": "bun test",
+    "tests": "bun test",
+    "tests-w": "bun --watch test",
+    "bench": "bun index.bench.ts",
     "deploy": "bun publish"
   },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "mitata": "^1.0.11"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
   },
   "publishConfig": {
+    "registry": "https://registry.npmjs.org",
     "access": "public",
     "tag": "latest"
   },

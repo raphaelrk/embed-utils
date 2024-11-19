@@ -5,6 +5,19 @@
 export type Embedding = number[];
 
 /**
+ * Generates a uniformly random embedding vector with values between -1 and 1
+ *
+ * Note via Claude: Random distributions may not be ideal for simulating embeddings:
+ * - Real embeddings often lie on/near lower-dimensional manifolds, not uniformly distributed
+ * - Most random distributions (uniform, Gaussian, etc) produce roughly orthogonal vectors in high dimensions
+ * - Random vectors don't preserve semantic relationships like real embeddings do
+ * Consider using domain-specific techniques if trying to simulate realistic embeddings
+ */
+export function uniformRandomEmbedding(dimension: number): Embedding {
+  return Array.from({ length: dimension }, () => Math.random() * 2 - 1);
+}
+
+/**
 * Calculates the cosine similarity between two embeddings
 * @param a First embedding vector
 * @param b Second embedding vector
