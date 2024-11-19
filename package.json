@@ -1,8 +1,8 @@
 {
   "name": "embed-utils",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Helpers for working with vector embeddings",
-  "module": "index.ts",
+  "module": "src/embeddingUtils.ts",
   "type": "module",
   "license": "MIT",
   "repository": {
@@ -38,7 +38,7 @@
     "tag": "latest"
   },
   "exports": {
-    ".": "./index.ts"
+    ".": "./src/embeddingUtils.ts"
   },
-  "types": "index.ts"
+  "types": "src/embeddingUtils.ts"
 }
